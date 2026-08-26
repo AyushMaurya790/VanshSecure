@@ -11,6 +11,8 @@ import office1 from "@/assets/office-1.jpg";
 import office2 from "@/assets/office-2.jpg";
 import office3 from "@/assets/office-3.jpg";
 import office4 from "@/assets/office-4.jpg";
+import office5 from "@/assets/office-5.jpg";
+import office6 from "@/assets/office-6.jpg";
 import { COMPANY } from "@/lib/site-data";
 
 export const Route = createFileRoute("/about")({
@@ -179,7 +181,7 @@ function AboutPage() {
           align="center"
           lede="Visit our office in the heart of the financial district."
         />
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           <img
             src={office1}
             alt="Vansh Secure Avenue Office View 1"
@@ -201,6 +203,18 @@ function AboutPage() {
           <img
             src={office4}
             alt="Vansh Secure Avenue Office View 4"
+            className="h-64 w-full rounded-lg object-cover shadow-card"
+            loading="lazy"
+          />
+          <img
+            src={office5}
+            alt="Vansh Secure Avenue Office View 5"
+            className="h-64 w-full rounded-lg object-cover shadow-card"
+            loading="lazy"
+          />
+          <img
+            src={office6}
+            alt="Vansh Secure Avenue Office View 6"
             className="h-64 w-full rounded-lg object-cover shadow-card"
             loading="lazy"
           />
