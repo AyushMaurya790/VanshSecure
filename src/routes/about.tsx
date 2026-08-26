@@ -3,9 +3,14 @@ import { PageHero } from "@/components/site/page-hero";
 import { Section, SectionHeading } from "@/components/site/section";
 import { ConsultationSection } from "@/components/site/consultation-section";
 import { CtaLink } from "@/components/site/cta";
-import founder from "@/assets/founder.jpg";
+import founderAnuj from "@/assets/founder-anuj.jpg";
+import founderStuti from "@/assets/founder-stuti.jpg";
 import family from "@/assets/family.jpg";
 import architecture from "@/assets/architecture.jpg";
+import office1 from "@/assets/office-1.jpg";
+import office2 from "@/assets/office-2.jpg";
+import office3 from "@/assets/office-3.jpg";
+import office4 from "@/assets/office-4.jpg";
 import { COMPANY } from "@/lib/site-data";
 
 export const Route = createFileRoute("/about")({
@@ -110,7 +115,7 @@ function AboutPage() {
       <Section>
         <div className="grid items-center gap-14 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
           <img
-            src={founder}
+            src={founderAnuj}
             alt="Founder of Vansh Secure Avenue LLP in his office"
             width={1008}
             height={1200}
@@ -138,6 +143,67 @@ function AboutPage() {
               </CtaLink>
             </div>
           </div>
+        </div>
+
+        {/* Founder 2 - Stuti Saboo */}
+        <div className="mt-24 grid items-center gap-14 lg:grid-cols-[1.2fr_0.8fr] lg:gap-20">
+          <div>
+            <p className="eyebrow text-gold-deep">Co-Founder's Message</p>
+            <blockquote className="mt-7 font-display text-3xl leading-[1.3] text-navy sm:text-4xl">
+              "Financial planning is not about products. It's about understanding people, their dreams, and creating strategies that bring peace of mind."
+            </blockquote>
+            <p className="mt-8 text-base leading-relaxed text-muted-foreground">
+              Every family has unique goals and concerns. Our role is to listen carefully, plan thoughtfully, and guide consistently through every financial decision.
+            </p>
+            <p className="mt-8 font-display text-2xl text-navy">Stuti Saboo</p>
+            <p className="eyebrow mt-1 text-muted-foreground">
+              Co-Founder & Partner
+            </p>
+          </div>
+          <img
+            src={founderStuti}
+            alt="Stuti Saboo - Co-Founder of Vansh Secure Avenue LLP"
+            width={1008}
+            height={1200}
+            loading="lazy"
+            className="rounded-xl object-cover shadow-card"
+          />
+        </div>
+      </Section>
+
+      {/* Office Gallery */}
+      <Section className="bg-ivory-deep">
+        <SectionHeading
+          eyebrow="Our Workspace"
+          title="Where Trust Meets Expertise"
+          align="center"
+          lede="Visit our office in the heart of the financial district."
+        />
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <img
+            src={office1}
+            alt="Vansh Secure Avenue Office View 1"
+            className="h-64 w-full rounded-lg object-cover shadow-card"
+            loading="lazy"
+          />
+          <img
+            src={office2}
+            alt="Vansh Secure Avenue Office View 2"
+            className="h-64 w-full rounded-lg object-cover shadow-card"
+            loading="lazy"
+          />
+          <img
+            src={office3}
+            alt="Vansh Secure Avenue Office View 3"
+            className="h-64 w-full rounded-lg object-cover shadow-card"
+            loading="lazy"
+          />
+          <img
+            src={office4}
+            alt="Vansh Secure Avenue Office View 4"
+            className="h-64 w-full rounded-lg object-cover shadow-card"
+            loading="lazy"
+          />
         </div>
       </Section>
 
