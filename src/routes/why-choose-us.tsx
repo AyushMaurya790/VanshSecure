@@ -11,7 +11,7 @@ import { HOME_FAQS } from "@/lib/site-data";
 export const Route = createFileRoute("/why-choose-us")({
   head: () => ({
     meta: [
-      { title: "Why Choose Vansh Secure Avenue LLP | Boutique Wealth Advisory" },
+      { title: "Why Choose Vansh Secure Avenue LLP | Boutique Wealth Office" },
       {
         name: "description",
         content:

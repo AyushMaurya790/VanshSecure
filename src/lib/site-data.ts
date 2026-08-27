@@ -65,7 +65,7 @@ export const SERVICES: Service[] = [
     summary:
       "Research-led portfolios across equity, debt and hybrid strategies, structured around your goals rather than market noise.",
     heroKicker: "Core Wealth Engine",
-    heroTitle: "Mutual Fund Advisory",
+    heroTitle: "Mutual Fund Office",
     heroLede:
       "Disciplined portfolio construction, reviewed continuously and aligned to the milestones that matter to your family.",
     overviewTitle: "A portfolio built around your life, not the market cycle",
@@ -110,7 +110,7 @@ export const SERVICES: Service[] = [
       },
       {
         q: "What is the minimum investment to work with you?",
-        a: "We work with investors across ticket sizes, though our advisory model is best suited to families and business owners building portfolios over the long term.",
+        a: "We work with investors across ticket sizes, though our Office model is best suited to families and business owners building portfolios over the long term.",
       },
       {
         q: "How often will my portfolio be reviewed?",
@@ -478,7 +478,7 @@ export const HOME_FAQS: Faq[] = [
   },
   {
     q: "Do you work only with high net worth investors?",
-    a: "Our advisory model is designed for serious long-term investors — business owners, professionals, families and NRIs. While much of our work is with HNI and UHNI clients, our first question is always about intent and horizon, not ticket size.",
+    a: "Our Office model is designed for serious long-term investors — business owners, professionals, families and NRIs. While much of our work is with HNI and UHNI clients, our first question is always about intent and horizon, not ticket size.",
   },
   {
     q: "How is your advice compensated?",

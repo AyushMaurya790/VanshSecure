@@ -14,12 +14,12 @@ export const Route = createFileRoute("/services")({
       {
         name: "description",
         content:
-          "Explore mutual funds, insurance, loan against securities, GIFT City, SIF, corporate FDs, tax saving bonds and unlisted shares advisory.",
+          "Explore mutual funds, insurance, loan against securities, GIFT City, SIF, corporate FDs, tax saving bonds and unlisted shares Office.",
       },
       { property: "og:title", content: "Premium Financial Solutions | Vansh Secure Avenue LLP" },
       {
         property: "og:description",
-        content: "Eight premium wealth solutions delivered with one disciplined advisory process.",
+        content: "Eight premium wealth solutions delivered with one disciplined Office process.",
       },
     ],
   }),
@@ -41,7 +41,7 @@ function ServicesPage() {
         <SectionHeading
           eyebrow="The Practice"
           title="Eight mandates, one standard of care"
-          lede="Each solution below has a dedicated advisory page detailing benefits, process and frequently asked questions."
+          lede="Each solution below has a dedicated Office page detailing benefits, process and frequently asked questions."
           align="center"
         />
         <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">

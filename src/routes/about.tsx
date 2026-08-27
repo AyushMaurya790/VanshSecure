@@ -18,7 +18,7 @@ import { COMPANY } from "@/lib/site-data";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Our Wealth Advisory Practice | Vansh Secure Avenue LLP" },
+      { title: "About Our Wealth Office Practice | Vansh Secure Avenue LLP" },
       {
         name: "description",
         content:

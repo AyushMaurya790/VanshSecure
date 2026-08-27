@@ -30,13 +30,13 @@ import { COMPANY, GOALS, HOME_FAQS, SERVICES } from "@/lib/site-data";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Vansh Secure Avenue LLP | Premium Wealth Advisory in India" },
+      { title: "Vansh Secure Avenue LLP | Premium Wealth Office in India" },
       {
         name: "description",
         content:
           "AMFI registered mutual fund distributor offering mutual funds, insurance, GIFT City, SIF, corporate FDs, bonds and unlisted shares for HNI families and business owners.",
       },
-      { property: "og:title", content: "Vansh Secure Avenue LLP | Premium Wealth Advisory" },
+      { property: "og:title", content: "Vansh Secure Avenue LLP | Premium Wealth Office" },
       {
         property: "og:description",
         content:
@@ -57,7 +57,7 @@ const TRUST = [
 const WHY = [
   {
     icon: Compass,
-    title: "Goal-first advisory",
+    title: "Goal-first Office",
     body: "Every recommendation begins with a defined objective and horizon — never with a product.",
   },
   {
@@ -112,7 +112,7 @@ function Home() {
       <section className="relative isolate overflow-hidden surface-navy">
         <img
           src={heroOffice}
-          alt="Private wealth advisory office overlooking a city skyline at golden hour"
+          alt="Private wealth Office office overlooking a city skyline at golden hour"
           width={1600}
           height={1200}
           className="absolute inset-0 -z-10 size-full object-cover opacity-30"

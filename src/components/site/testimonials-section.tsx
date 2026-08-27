@@ -13,7 +13,7 @@ const TESTIMONIALS = [
     id: 2,
     name: "Dr. Priya Sharma",
     role: "Healthcare Professional, Delhi",
-    content: "Best financial advisory experience I've had. They took time to understand my long-term goals and crafted a personalized investment strategy. The periodic reviews keep me informed and confident.",
+    content: "Best financial Office experience I've had. They took time to understand my long-term goals and crafted a personalized investment strategy. The periodic reviews keep me informed and confident.",
     rating: 5,
   },
   {
@@ -41,7 +41,7 @@ const TESTIMONIALS = [
     id: 6,
     name: "Anjali Desai",
     role: "NRI, Singapore",
-    content: "As an NRI, managing investments in India was challenging. Vansh Secure Avenue made it seamless with their expert guidance and paperless processes. Truly a world-class advisory experience.",
+    content: "As an NRI, managing investments in India was challenging. Vansh Secure Avenue made it seamless with their expert guidance and paperless processes. Truly a world-class Office experience.",
     rating: 5,
   },
   {

@@ -68,7 +68,7 @@ function ContactPage() {
                   name="interest"
                   className="mt-3 w-full rounded-md border border-input bg-background px-4 py-3.5 text-sm text-navy outline-none transition-colors focus:border-gold-deep"
                 >
-                  <option>General Wealth Advisory</option>
+                  <option>General Wealth Office</option>
                   {SERVICES.map((s) => (
                     <option key={s.slug}>{s.name}</option>
                   ))}
@@ -109,7 +109,7 @@ function ContactPage() {
             />
             <InfoCard icon={Mail} label="Write to us" value={COMPANY.email} href={`mailto:${COMPANY.email}`} />
             <InfoCard icon={MapPin} label="Office" value={COMPANY.address} href={COMPANY.mapLink} />
-            <InfoCard icon={Clock} label="Advisory hours" value={COMPANY.hours} />
+            <InfoCard icon={Clock} label="Office hours" value={COMPANY.hours} />
             <div className="rounded-xl border border-gold/40 bg-secondary p-8">
               <p className="font-display text-2xl text-navy">“{COMPANY.tagline}”</p>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
@@ -118,6 +118,42 @@ function ContactPage() {
               </p>
 
             </div>
+          </div>
+        </div>
+      </Section>
+
+      {/* Google Maps Section */}
+      <Section className="bg-ivory-deep">
+        <SectionHeading
+          eyebrow="Visit Our Office"
+          title="Find us on the map"
+          align="center"
+          lede="Our office is conveniently located in Jasola Vihar, New Delhi. Schedule a visit for a face-to-face consultation."
+        />
+        <div className="mt-12">
+          <div className="overflow-hidden rounded-xl shadow-lift">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.2547891556743!2d77.29530627549767!3d28.54060897571867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5004fc54fbf%3A0x3584d6f8e7b24c18!2sVansh%20Secure%20Avenue%20LLP!5e0!3m2!1sen!2sin!4v1724753893847!5m2!1sen!2sin"
+              width="100%"
+              height="450"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Vansh Secure Avenue LLP Office Location"
+              className="w-full"
+            />
+          </div>
+          <div className="mt-8 text-center">
+            <a
+              href="https://www.google.com/maps/place/Vansh+Secure+Avenue+LLP/@28.5406089,77.2953063,17z/data=!3m1!4b1!4m6!3m5!1s0x390ce5004fc54fbf:0x3584d6f8e7b24c18!8m2!3d28.5406089!4d77.2953063!16s%2Fg%2F11y97sj7sz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-md border border-gold/50 bg-white px-6 py-3 text-sm font-semibold text-navy transition-all duration-300 hover:border-gold hover:bg-gold/5"
+            >
+              <MapPin className="size-4" />
+              Open in Google Maps
+            </a>
           </div>
         </div>
       </Section>
