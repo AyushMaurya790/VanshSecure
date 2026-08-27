@@ -182,42 +182,114 @@ function AboutPage() {
           lede="Visit our office in the heart of the financial district."
         />
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          <img
-            src={office1}
-            alt="Vansh Secure Avenue Office View 1"
-            className="h-64 w-full rounded-lg object-cover shadow-card"
-            loading="lazy"
-          />
-          <img
-            src={office2}
-            alt="Vansh Secure Avenue Office View 2"
-            className="h-64 w-full rounded-lg object-cover shadow-card"
-            loading="lazy"
-          />
-          <img
-            src={office3}
-            alt="Vansh Secure Avenue Office View 3"
-            className="h-64 w-full rounded-lg object-cover shadow-card"
-            loading="lazy"
-          />
-          <img
-            src={office4}
-            alt="Vansh Secure Avenue Office View 4"
-            className="h-64 w-full rounded-lg object-cover shadow-card"
-            loading="lazy"
-          />
-          <img
-            src={office5}
-            alt="Vansh Secure Avenue Office View 5"
-            className="h-64 w-full rounded-lg object-cover shadow-card"
-            loading="lazy"
-          />
-          <img
-            src={office6}
-            alt="Vansh Secure Avenue Office View 6"
-            className="h-64 w-full rounded-lg object-cover shadow-card"
-            loading="lazy"
-          />
+          <a 
+            href={office1} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="group relative block overflow-hidden rounded-lg shadow-card transition-all duration-300 hover:shadow-lift"
+          >
+            <img
+              src={office1}
+              alt="Vansh Secure Avenue Office View 1"
+              className="h-64 w-full object-cover transition-transform duration-300 group-hover:scale-110"
+              loading="lazy"
+            />
+            <div className="absolute inset-0 flex items-center justify-center bg-navy/0 opacity-0 transition-all duration-300 group-hover:bg-navy/30 group-hover:opacity-100">
+              <span className="rounded-full bg-white/95 px-4 py-2 text-xs font-semibold text-navy shadow-lg">
+                Click to view full image
+              </span>
+            </div>
+          </a>
+          <a 
+            href={office2} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="group relative block overflow-hidden rounded-lg shadow-card transition-all duration-300 hover:shadow-lift"
+          >
+            <img
+              src={office2}
+              alt="Vansh Secure Avenue Office View 2"
+              className="h-64 w-full object-cover transition-transform duration-300 group-hover:scale-110"
+              loading="lazy"
+            />
+            <div className="absolute inset-0 flex items-center justify-center bg-navy/0 opacity-0 transition-all duration-300 group-hover:bg-navy/30 group-hover:opacity-100">
+              <span className="rounded-full bg-white/95 px-4 py-2 text-xs font-semibold text-navy shadow-lg">
+                Click to view full image
+              </span>
+            </div>
+          </a>
+          <a 
+            href={office3} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="group relative block overflow-hidden rounded-lg shadow-card transition-all duration-300 hover:shadow-lift"
+          >
+            <img
+              src={office3}
+              alt="Vansh Secure Avenue Office View 3"
+              className="h-64 w-full object-cover transition-transform duration-300 group-hover:scale-110"
+              loading="lazy"
+            />
+            <div className="absolute inset-0 flex items-center justify-center bg-navy/0 opacity-0 transition-all duration-300 group-hover:bg-navy/30 group-hover:opacity-100">
+              <span className="rounded-full bg-white/95 px-4 py-2 text-xs font-semibold text-navy shadow-lg">
+                Click to view full image
+              </span>
+            </div>
+          </a>
+          <a 
+            href={office4} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="group relative block overflow-hidden rounded-lg shadow-card transition-all duration-300 hover:shadow-lift"
+          >
+            <img
+              src={office4}
+              alt="Vansh Secure Avenue Office View 4"
+              className="h-64 w-full object-cover transition-transform duration-300 group-hover:scale-110"
+              loading="lazy"
+            />
+            <div className="absolute inset-0 flex items-center justify-center bg-navy/0 opacity-0 transition-all duration-300 group-hover:bg-navy/30 group-hover:opacity-100">
+              <span className="rounded-full bg-white/95 px-4 py-2 text-xs font-semibold text-navy shadow-lg">
+                Click to view full image
+              </span>
+            </div>
+          </a>
+          <a 
+            href={office5} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="group relative block overflow-hidden rounded-lg shadow-card transition-all duration-300 hover:shadow-lift"
+          >
+            <img
+              src={office5}
+              alt="Vansh Secure Avenue Office View 5"
+              className="h-64 w-full object-cover transition-transform duration-300 group-hover:scale-110"
+              loading="lazy"
+            />
+            <div className="absolute inset-0 flex items-center justify-center bg-navy/0 opacity-0 transition-all duration-300 group-hover:bg-navy/30 group-hover:opacity-100">
+              <span className="rounded-full bg-white/95 px-4 py-2 text-xs font-semibold text-navy shadow-lg">
+                Click to view full image
+              </span>
+            </div>
+          </a>
+          <a 
+            href={office6} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="group relative block overflow-hidden rounded-lg shadow-card transition-all duration-300 hover:shadow-lift"
+          >
+            <img
+              src={office6}
+              alt="Vansh Secure Avenue Office View 6"
+              className="h-64 w-full object-cover transition-transform duration-300 group-hover:scale-110"
+              loading="lazy"
+            />
+            <div className="absolute inset-0 flex items-center justify-center bg-navy/0 opacity-0 transition-all duration-300 group-hover:bg-navy/30 group-hover:opacity-100">
+              <span className="rounded-full bg-white/95 px-4 py-2 text-xs font-semibold text-navy shadow-lg">
+                Click to view full image
+              </span>
+            </div>
+          </a>
         </div>
       </Section>
 
