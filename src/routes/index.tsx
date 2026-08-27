@@ -11,12 +11,6 @@ import heroOffice from "@/assets/hero-office.jpg";
 import founderAnuj from "@/assets/founder-anuj.jpg";
 import founderStuti from "@/assets/founder-stuti.jpg";
 import family from "@/assets/family.jpg";
-import office1 from "@/assets/office-1.jpg";
-import office2 from "@/assets/office-2.jpg";
-import office3 from "@/assets/office-3.jpg";
-import office4 from "@/assets/office-4.jpg";
-import office5 from "@/assets/office-5.jpg";
-import office6 from "@/assets/office-6.jpg";
 import { CtaLink } from "@/components/site/cta";
 import { Section, SectionHeading } from "@/components/site/section";
 import { ServiceCard } from "@/components/site/service-card";
@@ -280,77 +274,6 @@ function Home() {
               </CtaLink>
             </div>
           </div>
-        </div>
-      </Section>
-
-      {/* Office Gallery */}
-      <Section>
-        <SectionHeading
-          eyebrow="Our Office"
-          title="Where Your Financial Future Takes Shape"
-          align="center"
-          lede="Visit our office space designed for confidential appointments and strategic wealth planning."
-        />
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          <div className="group relative overflow-hidden rounded-xl shadow-card transition-all duration-500 hover:-translate-y-2 hover:shadow-lift">
-            <img
-              src={office1}
-              alt="Vansh Secure Avenue Office - Reception Area"
-              className="h-72 w-full object-cover transition-transform duration-500 group-hover:scale-105"
-              loading="lazy"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-          </div>
-          <div className="group relative overflow-hidden rounded-xl shadow-card transition-all duration-500 hover:-translate-y-2 hover:shadow-lift">
-            <img
-              src={office2}
-              alt="Vansh Secure Avenue Office - Appointment Room"
-              className="h-72 w-full object-cover transition-transform duration-500 group-hover:scale-105"
-              loading="lazy"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-          </div>
-          <div className="group relative overflow-hidden rounded-xl shadow-card transition-all duration-500 hover:-translate-y-2 hover:shadow-lift">
-            <img
-              src={office3}
-              alt="Vansh Secure Avenue Office - Meeting Space"
-              className="h-72 w-full object-cover transition-transform duration-500 group-hover:scale-105"
-              loading="lazy"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-          </div>
-          <div className="group relative overflow-hidden rounded-xl shadow-card transition-all duration-500 hover:-translate-y-2 hover:shadow-lift">
-            <img
-              src={office4}
-              alt="Vansh Secure Avenue Office - Work Environment"
-              className="h-72 w-full object-cover transition-transform duration-500 group-hover:scale-105"
-              loading="lazy"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-          </div>
-          <div className="group relative overflow-hidden rounded-xl shadow-card transition-all duration-500 hover:-translate-y-2 hover:shadow-lift">
-            <img
-              src={office5}
-              alt="Vansh Secure Avenue Office - Team Space"
-              className="h-72 w-full object-cover transition-transform duration-500 group-hover:scale-105"
-              loading="lazy"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-          </div>
-          <div className="group relative overflow-hidden rounded-xl shadow-card transition-all duration-500 hover:-translate-y-2 hover:shadow-lift">
-            <img
-              src={office6}
-              alt="Vansh Secure Avenue Office - Professional Environment"
-              className="h-72 w-full object-cover transition-transform duration-500 group-hover:scale-105"
-              loading="lazy"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/20 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-          </div>
-        </div>
-        <div className="mt-12 text-center">
-          <CtaLink to="/contact" variant="outlineDark">
-            Schedule an Office Visit
-          </CtaLink>
         </div>
       </Section>
 

@@ -1,4 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useState } from "react";
+import { X } from "lucide-react";
 import { PageHero } from "@/components/site/page-hero";
 import { Section, SectionHeading } from "@/components/site/section";
 import { ConsultationSection } from "@/components/site/consultation-section";
@@ -42,6 +44,17 @@ const VALUES = [
 ];
 
 function AboutPage() {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
+  const officeImages = [
+    { src: office1, alt: "Vansh Secure Avenue Office View 1" },
+    { src: office2, alt: "Vansh Secure Avenue Office View 2" },
+    { src: office3, alt: "Vansh Secure Avenue Office View 3" },
+    { src: office4, alt: "Vansh Secure Avenue Office View 4" },
+    { src: office5, alt: "Vansh Secure Avenue Office View 5" },
+    { src: office6, alt: "Vansh Secure Avenue Office View 6" },
+  ];
+
   return (
     <>
       <PageHero
@@ -181,117 +194,54 @@ function AboutPage() {
           align="center"
           lede="Visit our office in the heart of the financial district."
         />
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          <a 
-            href={office1} 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="group relative block overflow-hidden rounded-lg shadow-card transition-all duration-300 hover:shadow-lift"
-          >
-            <img
-              src={office1}
-              alt="Vansh Secure Avenue Office View 1"
-              className="h-64 w-full object-cover transition-transform duration-300 group-hover:scale-110"
-              loading="lazy"
-            />
-            <div className="absolute inset-0 flex items-center justify-center bg-navy/0 opacity-0 transition-all duration-300 group-hover:bg-navy/30 group-hover:opacity-100">
-              <span className="rounded-full bg-white/95 px-4 py-2 text-xs font-semibold text-navy shadow-lg">
-                Click to view full image
-              </span>
-            </div>
-          </a>
-          <a 
-            href={office2} 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="group relative block overflow-hidden rounded-lg shadow-card transition-all duration-300 hover:shadow-lift"
-          >
-            <img
-              src={office2}
-              alt="Vansh Secure Avenue Office View 2"
-              className="h-64 w-full object-cover transition-transform duration-300 group-hover:scale-110"
-              loading="lazy"
-            />
-            <div className="absolute inset-0 flex items-center justify-center bg-navy/0 opacity-0 transition-all duration-300 group-hover:bg-navy/30 group-hover:opacity-100">
-              <span className="rounded-full bg-white/95 px-4 py-2 text-xs font-semibold text-navy shadow-lg">
-                Click to view full image
-              </span>
-            </div>
-          </a>
-          <a 
-            href={office3} 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="group relative block overflow-hidden rounded-lg shadow-card transition-all duration-300 hover:shadow-lift"
-          >
-            <img
-              src={office3}
-              alt="Vansh Secure Avenue Office View 3"
-              className="h-64 w-full object-cover transition-transform duration-300 group-hover:scale-110"
-              loading="lazy"
-            />
-            <div className="absolute inset-0 flex items-center justify-center bg-navy/0 opacity-0 transition-all duration-300 group-hover:bg-navy/30 group-hover:opacity-100">
-              <span className="rounded-full bg-white/95 px-4 py-2 text-xs font-semibold text-navy shadow-lg">
-                Click to view full image
-              </span>
-            </div>
-          </a>
-          <a 
-            href={office4} 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="group relative block overflow-hidden rounded-lg shadow-card transition-all duration-300 hover:shadow-lift"
-          >
-            <img
-              src={office4}
-              alt="Vansh Secure Avenue Office View 4"
-              className="h-64 w-full object-cover transition-transform duration-300 group-hover:scale-110"
-              loading="lazy"
-            />
-            <div className="absolute inset-0 flex items-center justify-center bg-navy/0 opacity-0 transition-all duration-300 group-hover:bg-navy/30 group-hover:opacity-100">
-              <span className="rounded-full bg-white/95 px-4 py-2 text-xs font-semibold text-navy shadow-lg">
-                Click to view full image
-              </span>
-            </div>
-          </a>
-          <a 
-            href={office5} 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="group relative block overflow-hidden rounded-lg shadow-card transition-all duration-300 hover:shadow-lift"
-          >
-            <img
-              src={office5}
-              alt="Vansh Secure Avenue Office View 5"
-              className="h-64 w-full object-cover transition-transform duration-300 group-hover:scale-110"
-              loading="lazy"
-            />
-            <div className="absolute inset-0 flex items-center justify-center bg-navy/0 opacity-0 transition-all duration-300 group-hover:bg-navy/30 group-hover:opacity-100">
-              <span className="rounded-full bg-white/95 px-4 py-2 text-xs font-semibold text-navy shadow-lg">
-                Click to view full image
-              </span>
-            </div>
-          </a>
-          <a 
-            href={office6} 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="group relative block overflow-hidden rounded-lg shadow-card transition-all duration-300 hover:shadow-lift"
-          >
-            <img
-              src={office6}
-              alt="Vansh Secure Avenue Office View 6"
-              className="h-64 w-full object-cover transition-transform duration-300 group-hover:scale-110"
-              loading="lazy"
-            />
-            <div className="absolute inset-0 flex items-center justify-center bg-navy/0 opacity-0 transition-all duration-300 group-hover:bg-navy/30 group-hover:opacity-100">
-              <span className="rounded-full bg-white/95 px-4 py-2 text-xs font-semibold text-navy shadow-lg">
-                Click to view full image
-              </span>
-            </div>
-          </a>
+        <div className="mt-12 grid gap-8 sm:grid-cols-2">
+          {officeImages.map((image, index) => (
+            <button
+              key={index}
+              onClick={() => setSelectedImage(image.src)}
+              className="group relative overflow-hidden rounded-xl shadow-lift transition-all duration-300 hover:shadow-2xl focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2"
+            >
+              <img
+                src={image.src}
+                alt={image.alt}
+                className="h-96 w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 flex items-center justify-center bg-navy/0 opacity-0 transition-all duration-300 group-hover:bg-navy/20 group-hover:opacity-100">
+                <span className="rounded-full bg-white/95 px-4 py-2 text-xs font-semibold text-navy shadow-lg">
+                  Click to enlarge
+                </span>
+              </div>
+            </button>
+          ))}
         </div>
       </Section>
+
+      {/* Image Lightbox Modal */}
+      {selectedImage && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-navy/95 p-4 backdrop-blur-sm"
+          onClick={() => setSelectedImage(null)}
+        >
+          <button
+            onClick={() => setSelectedImage(null)}
+            className="absolute right-4 top-4 z-10 rounded-full bg-white/10 p-3 text-white transition-all duration-300 hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-white"
+            aria-label="Close"
+          >
+            <X className="size-6" />
+          </button>
+          <div
+            className="relative max-h-[90vh] max-w-7xl"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <img
+              src={selectedImage}
+              alt="Office view - enlarged"
+              className="max-h-[90vh] w-auto rounded-lg shadow-2xl"
+            />
+          </div>
+        </div>
+      )}
 
       <ConsultationSection />
     </>
