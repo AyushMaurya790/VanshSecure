@@ -149,7 +149,7 @@ function AboutPage() {
             </p>
             <p className="mt-8 font-display text-2xl text-navy">Anuj Maheshwari</p>
             <p className="eyebrow mt-1 text-muted-foreground">
-              Co-Founder & Designated Partner · {COMPANY.arn} · {COMPANY.credential}
+              Founder
             </p>
 
             <div className="mt-10">
@@ -172,7 +172,7 @@ function AboutPage() {
             </p>
             <p className="mt-8 font-display text-2xl text-navy">Stuti Saboo</p>
             <p className="eyebrow mt-1 text-muted-foreground">
-              Co-Founder & Designated Partner
+              Founder
             </p>
           </div>
           <img
