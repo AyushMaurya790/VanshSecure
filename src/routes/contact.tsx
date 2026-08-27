@@ -11,13 +11,13 @@ import { COMPANY, SERVICES } from "@/lib/site-data";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Schedule a Consultation | Vansh Secure Avenue LLP" },
+      { title: "Schedule an Appointment | Vansh Secure Avenue LLP" },
       {
         name: "description",
         content:
-          "Request a private consultation with a senior wealth advisor at Vansh Secure Avenue LLP for mutual funds, insurance and premium investment solutions.",
+          "Request a private appointment with an expert at Vansh Secure Avenue LLP for mutual funds, insurance and premium investment solutions.",
       },
-      { property: "og:title", content: "Schedule a Consultation | Vansh Secure Avenue LLP" },
+      { property: "og:title", content: "Schedule an Appointment | Vansh Secure Avenue LLP" },
       {
         property: "og:description",
         content: "An unhurried conversation about your goals, portfolio and long-term plan.",
@@ -33,9 +33,9 @@ function ContactPage() {
   return (
     <>
       <PageHero
-        eyebrow="Private Consultation"
+        eyebrow="Private Appointment"
         title="Begin a conversation"
-        lede="Share a few details and a senior advisor will reach out to arrange a confidential discussion at a time that suits you."
+        lede="Share a few details and an expert will reach out to arrange a confidential discussion at a time that suits you."
         image={architecture}
         imageAlt="Luxury financial district architecture at dusk"
       />
@@ -87,7 +87,7 @@ function ContactPage() {
               </div>
               <div className="sm:col-span-2">
                 <CtaButton type="submit" className="w-full sm:w-auto">
-                  Schedule Your Consultation
+                  Schedule Your Appointment
                 </CtaButton>
                 {sent ? (
                   <p className="mt-4 text-sm text-muted-foreground">
@@ -100,9 +100,15 @@ function ContactPage() {
 
           <div className="space-y-6">
             <InfoCard icon={Phone} label="Call or WhatsApp" value={COMPANY.phone} href={`tel:${COMPANY.phone.replace(/\s/g, "")}`} />
-            <InfoCard icon={MessageCircle} label="WhatsApp us" value={COMPANY.phone} href={`https://wa.me/${COMPANY.whatsapp.replace(/\D/g, "")}`} />
+            <InfoCard 
+              icon={MessageCircle} 
+              label="WhatsApp us" 
+              value={COMPANY.phone} 
+              href={`https://wa.me/${COMPANY.whatsapp.replace(/\D/g, "")}`}
+              subtitle={COMPANY.hours}
+            />
             <InfoCard icon={Mail} label="Write to us" value={COMPANY.email} href={`mailto:${COMPANY.email}`} />
-            <InfoCard icon={MapPin} label="Office" value={COMPANY.address} />
+            <InfoCard icon={MapPin} label="Office" value={COMPANY.address} href={COMPANY.mapLink} />
             <InfoCard icon={Clock} label="Advisory hours" value={COMPANY.hours} />
             <div className="rounded-xl border border-gold/40 bg-secondary p-8">
               <p className="font-display text-2xl text-navy">“{COMPANY.tagline}”</p>
@@ -153,20 +159,28 @@ function InfoCard({
   label,
   value,
   href,
+  subtitle,
 }: {
   icon: React.ElementType;
   label: string;
   value: string;
   href?: string;
+  subtitle?: string;
 }) {
   const content = (
     <>
       <span className="flex size-11 items-center justify-center rounded-full border border-gold/50 bg-secondary text-gold-deep">
         <Icon className="size-4" />
       </span>
-      <span>
+      <span className="flex-1">
         <span className="eyebrow block text-muted-foreground">{label}</span>
         <span className="mt-1 block text-sm text-navy">{value}</span>
+        {subtitle && (
+          <span className="mt-2 flex items-center gap-1.5 text-xs text-muted-foreground">
+            <Clock className="size-3" />
+            {subtitle}
+          </span>
+        )}
       </span>
     </>
   );

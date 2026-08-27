@@ -3,7 +3,7 @@ import { CtaLink } from "@/components/site/cta";
 import { COMPANY } from "@/lib/site-data";
 
 export function ConsultationSection({
-  title = "Schedule a private consultation",
+  title = "Schedule a private appointment",
   body = "An unhurried conversation about your goals, your existing portfolio and what a structured plan could look like for your family.",
 }: {
   title?: string;
@@ -25,7 +25,7 @@ export function ConsultationSection({
             />
           </div>
           <div>
-            <p className="eyebrow text-gold">Private Consultation</p>
+            <p className="eyebrow text-gold">Private Appointment</p>
             <h2 className="mt-5 text-balance text-4xl leading-[1.12] text-ivory sm:text-5xl">
               {title}
             </h2>
@@ -34,7 +34,7 @@ export function ConsultationSection({
               {[
                 "No obligation and no product pitch in the first meeting",
                 "A written view on your current allocation",
-                "Direct access to a senior advisor throughout",
+                "Direct access to an expert throughout",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3">
                   <span className="mt-2 size-1.5 shrink-0 rounded-full bg-gold" />
@@ -43,7 +43,7 @@ export function ConsultationSection({
               ))}
             </ul>
             <div className="mt-11 flex flex-wrap gap-4">
-              <CtaLink to="/contact">Schedule Your Consultation</CtaLink>
+              <CtaLink to="/contact">Schedule Your Appointment</CtaLink>
               <a
                 href={`tel:${COMPANY.phone.replace(/\s/g, "")}`}
                 className="inline-flex items-center justify-center rounded-md border border-ivory/30 px-7 py-4 text-[0.78rem] font-semibold uppercase tracking-[0.16em] text-ivory transition-colors duration-500 hover:border-gold hover:text-gold"

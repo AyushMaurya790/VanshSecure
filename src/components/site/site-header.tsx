@@ -110,7 +110,7 @@ export function SiteHeader() {
 
           <div className="hidden xl:block">
             <CtaLink to="/contact" size="sm">
-              Schedule Your Consultation
+              Schedule Your Appointment
             </CtaLink>
           </div>
 
@@ -147,7 +147,7 @@ export function SiteHeader() {
                 </Link>
               ))}
               <CtaLink to="/contact" className="mt-6 w-full">
-                Schedule Your Consultation
+                Schedule Your Appointment
               </CtaLink>
             </div>
           </div>

@@ -40,7 +40,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "Save Karo, Secure Karo. Boutique wealth advisory for families, business owners, professionals and NRIs.",
+          "Save Karo, Secure Karo. Boutique financial services firm helping families build and manage mutual fund portfolios with a long-term, goal-oriented approach.",
       },
     ],
   }),
@@ -49,8 +49,8 @@ export const Route = createFileRoute("/")({
 
 const TRUST = [
   { label: "AMFI Registered", value: "Distributor" },
-  { label: "Advisory Focus", value: "HNI & UHNI" },
-  { label: "Solutions Offered", value: "8 Verticals" },
+  { label: "Specialised Client Services", value: "HNI & UHNI" },
+  { label: "Our Offerings", value: "8 Focus Areas" },
   { label: "Client Relationships", value: "Long Term" },
 ];
 
@@ -126,13 +126,14 @@ function Home() {
               <span className="block italic text-gold">Protected with intent.</span>
             </h1>
             <p className="reveal mt-9 max-w-xl text-lg leading-relaxed text-ivory/75">
-              Vansh Secure Avenue LLP is a boutique wealth advisory practice helping families,
-              business owners and professionals create, preserve and transfer wealth through
-              personalised financial solutions.
+              Vansh Secure Avenue LLP is a boutique financial services firm helping families,
+              business owners and professionals build and manage their mutual fund portfolios with
+              a long-term, goal-oriented approach and simplify the complexities of
+              intergenerational wealth transfer through personalised and goal-oriented strategies.
             </p>
             <div className="reveal mt-12 flex flex-wrap gap-4">
               <CtaLink to="/contact" size="lg">
-                Schedule Your Consultation
+                Schedule Your Appointment
               </CtaLink>
               <CtaLink to="/services" variant="outlineLight" size="lg">
                 Explore Our Services
@@ -288,7 +289,7 @@ function Home() {
           eyebrow="Our Office"
           title="Where Your Financial Future Takes Shape"
           align="center"
-          lede="Visit our office space designed for confidential consultations and strategic wealth planning."
+          lede="Visit our office space designed for confidential appointments and strategic wealth planning."
         />
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           <div className="group relative overflow-hidden rounded-xl shadow-card transition-all duration-500 hover:-translate-y-2 hover:shadow-lift">
@@ -303,7 +304,7 @@ function Home() {
           <div className="group relative overflow-hidden rounded-xl shadow-card transition-all duration-500 hover:-translate-y-2 hover:shadow-lift">
             <img
               src={office2}
-              alt="Vansh Secure Avenue Office - Consultation Room"
+              alt="Vansh Secure Avenue Office - Appointment Room"
               className="h-72 w-full object-cover transition-transform duration-500 group-hover:scale-105"
               loading="lazy"
             />

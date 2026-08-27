@@ -22,7 +22,7 @@ export const Route = createFileRoute("/about")({
       {
         name: "description",
         content:
-          "Vansh Secure Avenue LLP is a boutique AMFI registered advisory practice serving HNI families, business owners, professionals and NRIs across India.",
+          "Vansh Secure Avenue LLP is a boutique AMFI registered financial services firm helping families, business owners and professionals build and manage mutual fund portfolios and simplify intergenerational wealth transfer.",
       },
       { property: "og:title", content: "About Vansh Secure Avenue LLP" },
       {
@@ -47,10 +47,10 @@ function AboutPage() {
       <PageHero
         eyebrow="About the Firm"
         title="Counsel built for the long horizon"
-        lede="Vansh Secure Avenue LLP is a boutique wealth advisory practice and AMFI registered mutual fund distributor, working with families who measure outcomes in decades."
+        lede="Vansh Secure Avenue LLP is a boutique financial services firm and AMFI registered mutual fund distributor helping families build and manage their mutual fund portfolios with a long-term, goal-oriented approach and simplify intergenerational wealth transfer through personalised strategies."
         image={architecture}
         imageAlt="Luxury financial district architecture at dusk"
-        actions={<CtaLink to="/contact">Request a Personalized Consultation</CtaLink>}
+        actions={<CtaLink to="/contact">Request a Personalized Appointment</CtaLink>}
       />
 
       <Section>
@@ -136,7 +136,7 @@ function AboutPage() {
             </p>
             <p className="mt-8 font-display text-2xl text-navy">Anuj Maheshwari</p>
             <p className="eyebrow mt-1 text-muted-foreground">
-              Designated Partner · {COMPANY.arn} · {COMPANY.credential}
+              Co-Founder & Designated Partner · {COMPANY.arn} · {COMPANY.credential}
             </p>
 
             <div className="mt-10">
@@ -159,7 +159,7 @@ function AboutPage() {
             </p>
             <p className="mt-8 font-display text-2xl text-navy">Stuti Saboo</p>
             <p className="eyebrow mt-1 text-muted-foreground">
-              Co-Founder & Partner
+              Co-Founder & Designated Partner
             </p>
           </div>
           <img

@@ -35,7 +35,7 @@ function ServicesPage() {
         lede="From core portfolio construction to protection, liquidity, global access and legacy structuring — delivered with the same discipline throughout."
         image={architecture}
         imageAlt="Luxury financial district architecture at dusk"
-        actions={<CtaLink to="/contact">Request a Personalized Consultation</CtaLink>}
+        actions={<CtaLink to="/contact">Request a Personalized Appointment</CtaLink>}
       />
       <Section>
         <SectionHeading

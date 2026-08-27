@@ -30,8 +30,10 @@ export function SiteFooter() {
               </span>
             </div>
             <p className="mt-7 max-w-md text-sm leading-relaxed text-ivory/65">
-              A boutique wealth advisory practice helping families, business owners and
-              professionals build, protect and transfer wealth with clarity and discipline.
+              A boutique financial services firm helping families, business owners and
+              professionals build and manage their mutual fund portfolios with a long-term,
+              goal-oriented approach and simplify the complexities of intergenerational wealth
+              transfer.
             </p>
             <div className="mt-8 space-y-3 text-sm text-ivory/70">
               <a

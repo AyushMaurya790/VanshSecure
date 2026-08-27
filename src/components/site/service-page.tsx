@@ -20,7 +20,7 @@ export function ServicePage({ service }: { service: Service }) {
         imageAlt="Luxury financial district architecture at dusk"
         actions={
           <>
-            <CtaLink to="/contact">Schedule Your Consultation</CtaLink>
+            <CtaLink to="/contact">Schedule Your Appointment</CtaLink>
             <CtaLink to="/services" variant="outlineLight">
               Explore Our Services
             </CtaLink>

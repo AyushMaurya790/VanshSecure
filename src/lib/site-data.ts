@@ -21,10 +21,11 @@ export const COMPANY = {
   altPhone: "+91 99537 51304",
   email: "support@vanshsecure.com",
   altEmail: "vanshsecureavenue@gmail.com",
-  address: "84, B-1 Basement, Pocket-1, Jasola, New Delhi – 110025",
+  address: "84, Basement, Pocket 1, Jasola Vihar, New Delhi, Delhi 110025",
+  mapLink: "https://maps.app.goo.gl/BdZD6MeJRz3TJxBh6",
   hours: "Mon – Sat · 10:00 AM to 7:00 PM IST",
-  founders: "Anuj Maheshwari & Stuti",
-  partner: "Anuj Maheshwari · Designated Partner",
+  founders: "Anuj Maheshwari & Stuti Saboo",
+  partner: "Anuj Maheshwari · Co-Founder & Designated Partner",
   experience: "12+ years",
 };
 
@@ -93,7 +94,7 @@ export const SERVICES: Service[] = [
     reasons: [
       "Independent, distributor-agnostic recommendations across major asset management companies",
       "Written investment rationale for every portfolio you own",
-      "Direct access to a senior advisor, not a call centre",
+      "Direct access to an expert, not a call centre",
       "Documentation, transmission and nomination support handled end to end",
     ],
     process: [
