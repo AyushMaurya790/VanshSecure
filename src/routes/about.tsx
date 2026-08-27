@@ -172,7 +172,7 @@ function AboutPage() {
             </p>
             <p className="mt-8 font-display text-2xl text-navy">Stuti Saboo</p>
             <p className="eyebrow mt-1 text-muted-foreground">
-              Founder
+              Co-Founder & Designated Partner
             </p>
           </div>
           <img
