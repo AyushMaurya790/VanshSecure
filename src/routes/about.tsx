@@ -149,7 +149,7 @@ function AboutPage() {
             </p>
             <p className="mt-8 font-display text-2xl text-navy">Anuj Maheshwari</p>
             <p className="eyebrow mt-1 text-muted-foreground">
-              Founder
+              Co-Founder & Designated Partner
             </p>
 
             <div className="mt-10">
@@ -199,12 +199,12 @@ function AboutPage() {
             <button
               key={index}
               onClick={() => setSelectedImage(image.src)}
-              className="group relative overflow-hidden rounded-xl shadow-lift transition-all duration-300 hover:shadow-2xl focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2"
+              className="group relative flex items-center justify-center overflow-hidden rounded-xl bg-ivory shadow-lift transition-all duration-300 hover:shadow-2xl focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2"
             >
               <img
                 src={image.src}
                 alt={image.alt}
-                className="h-96 w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                className="h-auto w-full object-contain transition-transform duration-300 group-hover:scale-105"
                 loading="lazy"
               />
               <div className="absolute inset-0 flex items-center justify-center bg-navy/0 opacity-0 transition-all duration-300 group-hover:bg-navy/20 group-hover:opacity-100">
