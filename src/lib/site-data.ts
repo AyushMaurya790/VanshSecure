@@ -125,7 +125,7 @@ export const SERVICES: Service[] = [
     ctaTitle: "Build a portfolio with intent",
 
     ctaBody:
-      "Sit down with an advisor and translate your goals into a structured, reviewable mutual fund portfolio.",
+      "Sit down with an expert and translate your goals into a structured, reviewable mutual fund portfolio.",
   },
   {
     slug: "insurance",
@@ -391,7 +391,7 @@ export const SERVICES: Service[] = [
       { q: "Are availability windows limited?", a: "Yes. Many issuances are time-bound, so we alert clients when suitable windows open." },
     ],
     ctaTitle: "Improve what you keep",
-    ctaBody: "Review your post-tax fixed-income position with an advisor.",
+    ctaBody: "Review your post-tax fixed-income position with an expert.",
   },
   {
     slug: "unlisted-shares",
@@ -489,7 +489,7 @@ export const HOME_FAQS: Faq[] = [
     a: "Yes. We work with non-resident investors across permissible routes, including domestic mutual funds and GIFT City structures, with support on documentation, repatriation and reporting considerations.",
   },
   {
-    q: "How often will I hear from my advisor?",
+    q: "How often will my investments get reviewed?",
     a: "You will have structured periodic reviews, plus proactive communication whenever a decision, rebalancing action or regulatory change is relevant to your portfolio.",
   },
 ];

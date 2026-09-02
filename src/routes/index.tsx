@@ -67,7 +67,7 @@ const WHY = [
   {
     icon: Users,
     title: "Senior-level attention",
-    body: "A deliberately boutique practice, so you always speak with the advisor who knows your file.",
+    body: "A deliberately boutique practice, so you always speak with the expert who knows your file.",
   },
   {
     icon: Award,
@@ -266,7 +266,7 @@ function Home() {
               market cycles and life's surprises alike. That is what “Save Karo, Secure Karo”
               means to us.
             </p>
-            <p className="mt-8 font-display text-2xl text-navy">Founder & Managing Partner</p>
+            <p className="mt-8 font-display text-2xl text-navy">Co-Founder & Designated Partner</p>
             <p className="eyebrow mt-1 text-muted-foreground">{COMPANY.name}</p>
             <div className="mt-10">
               <CtaLink to="/contact" variant="outlineDark">
@@ -361,24 +361,6 @@ function Home() {
       <ConsultationSection />
 
       <TestimonialsSection />
-
-      <Section className="bg-card">
-        <div className="rounded-xl border border-navy/10 bg-secondary px-8 py-14 text-center sm:px-16">
-          <p className="eyebrow text-gold-deep">Ready When You Are</p>
-          <h2 className="mx-auto mt-5 max-w-2xl text-balance text-4xl leading-tight text-navy sm:text-5xl">
-            Secure your financial future with advisors who take the long view
-          </h2>
-          <div className="mt-11 flex flex-wrap justify-center gap-4">
-            <CtaLink to="/contact">Schedule Your Consultation</CtaLink>
-            <Link
-              to="/services"
-              className="inline-flex items-center justify-center rounded-md border border-navy/25 px-7 py-4 text-[0.78rem] font-semibold uppercase tracking-[0.16em] text-navy transition-colors duration-500 hover:border-gold-deep hover:bg-navy hover:text-ivory"
-            >
-              Explore Our Services
-            </Link>
-          </div>
-        </div>
-      </Section>
     </>
   );
 }

@@ -24,11 +24,11 @@ export function FaqSection({
           <SectionHeading
             eyebrow={eyebrow}
             title={title}
-            lede="If your question is not answered here, a short conversation with an advisor usually resolves it in minutes."
+            lede="If your question is not answered here, a short conversation with an expert usually resolves it in minutes."
           />
           <div className="mt-10">
             <CtaLink to="/contact" variant="outlineDark">
-              Speak with an Investment Advisor
+              Speak with an Expert
             </CtaLink>
           </div>
         </div>

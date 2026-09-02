@@ -52,7 +52,7 @@ function ContactPage() {
               onSubmit={(e) => {
                 e.preventDefault();
                 setSent(true);
-                toast.success("Thank you — an advisor will contact you shortly.");
+                toast.success("Thank you — an expert will contact you shortly.");
                 (e.target as HTMLFormElement).reset();
               }}
             >

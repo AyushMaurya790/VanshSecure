@@ -17,7 +17,7 @@ export function ConsultationSection({
             <div className="absolute -left-4 -top-4 hidden size-full rounded-xl border border-gold/35 lg:block" />
             <img
               src={consultation}
-              alt="Advisor reviewing a portfolio with clients in a private meeting room"
+              alt="Expert reviewing a portfolio with clients in a private meeting room"
               width={1408}
               height={1008}
               loading="lazy"
@@ -48,7 +48,7 @@ export function ConsultationSection({
                 href={`tel:${COMPANY.phone.replace(/\s/g, "")}`}
                 className="inline-flex items-center justify-center rounded-md border border-ivory/30 px-7 py-4 text-[0.78rem] font-semibold uppercase tracking-[0.16em] text-ivory transition-colors duration-500 hover:border-gold hover:text-gold"
               >
-                Talk to an Advisor
+                Talk to an Expert
               </a>
             </div>
           </div>
