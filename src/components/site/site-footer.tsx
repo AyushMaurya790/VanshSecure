@@ -80,7 +80,7 @@ export function SiteFooter() {
             </ul>
             <div className="mt-10">
               <CtaLink to="/contact" size="sm">
-                Talk to an Advisor
+                Talk to an Expert
               </CtaLink>
             </div>
           </div>

@@ -56,7 +56,7 @@ export function ServicePage({ service }: { service: Service }) {
               ))}
             </ul>
             <CtaLink to="/contact" size="sm" className="mt-8 w-full">
-              Talk to an Advisor
+              Talk to an Expert
             </CtaLink>
           </div>
         </div>
