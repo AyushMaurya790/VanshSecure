@@ -3,7 +3,7 @@ import { Sparkles } from "lucide-react";
 const ITEMS = [
   "Goal Planning SIP",
   "Retirement Planning",
-  "Tax Planning",
+  "Tax Harvesting",
   "Investment through GIFT City",
   "Specialized Investment Funds",
   "Loan Against Securities",

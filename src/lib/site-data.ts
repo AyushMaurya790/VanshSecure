@@ -126,7 +126,7 @@ export const SERVICES: Service[] = [
     offerings: [
       { name: "Goal Planning SIP", body: "Systematic plans mapped to specific milestones — education, home, wealth creation." },
       { name: "Retirement Planning", body: "Accumulation and withdrawal strategies that fund a self-reliant retirement." },
-      { name: "Tax Planning", body: "ELSS and allocation choices that improve post-tax outcomes within your plan." },
+      { name: "Tax Harvesting", body: "ELSS and allocation choices that improve post-tax outcomes within your plan." },
     ],
     ctaTitle: "Build a portfolio with intent",
 
@@ -466,9 +466,9 @@ export const GOALS = [
     horizon: "8 – 18 years",
   },
   {
-    title: "Wealth Preservation",
-    body: "Capital protection strategies for families who have already created wealth and now wish to defend it.",
-    horizon: "Ongoing",
+    title: "Build Your Dream Home",
+    body: "Planning for buying a home with structured savings and investment strategy to achieve your homeownership goals.",
+    horizon: "5 – 15 years",
   },
   {
     title: "Legacy & Succession",
