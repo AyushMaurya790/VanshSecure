@@ -43,7 +43,7 @@ export function ConsultationSection({
               ))}
             </ul>
             <div className="mt-11 flex flex-wrap gap-4">
-              <CtaLink to="/contact">Schedule Your Appointment</CtaLink>
+              <CtaLink to="/contact">Free Portfolio Review</CtaLink>
               <a
                 href={`tel:${COMPANY.phone.replace(/\s/g, "")}`}
                 className="inline-flex items-center justify-center rounded-md border border-ivory/30 px-7 py-4 text-[0.78rem] font-semibold uppercase tracking-[0.16em] text-ivory transition-colors duration-500 hover:border-gold hover:text-gold"

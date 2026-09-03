@@ -27,6 +27,12 @@ export const COMPANY = {
   founders: "Anuj Maheshwari & Stuti Saboo",
   partner: "Anuj Maheshwari · Co-Founder & Designated Partner",
   experience: "12+ years",
+  social: {
+    instagram: "https://www.instagram.com/vanshsecureavenue/",
+    facebook: "https://www.facebook.com/vanshsecureavenue/",
+    linkedin: "https://www.linkedin.com/company/vansh-secure-avenue-llp/",
+    twitter: "https://twitter.com/vanshsecure",
+  },
 };
 
 

@@ -127,7 +127,7 @@ function Home() {
             </p>
             <div className="reveal mt-12 flex flex-wrap gap-4">
               <CtaLink to="/contact" size="lg">
-                Schedule Your Appointment
+                Free Portfolio Review
               </CtaLink>
               <CtaLink to="/services" variant="outlineLight" size="lg">
                 Explore Our Services

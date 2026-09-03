@@ -87,7 +87,7 @@ function ContactPage() {
               </div>
               <div className="sm:col-span-2">
                 <CtaButton type="submit" className="w-full sm:w-auto">
-                  Schedule Your Appointment
+                  Free Portfolio Review
                 </CtaButton>
                 {sent ? (
                   <p className="mt-4 text-sm text-muted-foreground">

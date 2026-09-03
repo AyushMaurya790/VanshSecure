@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone, Instagram, Facebook, Linkedin, Twitter } from "lucide-react";
 import { COMPANY, NAV_LINKS, SERVICES } from "@/lib/site-data";
 import { CtaLink } from "@/components/site/cta";
 import logo from "@/assets/securelogo.jpg";
@@ -45,6 +45,45 @@ export function SiteFooter() {
               <p className="flex items-start gap-3">
                 <MapPin className="mt-0.5 size-4 shrink-0 text-gold" /> {COMPANY.address}
               </p>
+            </div>
+            
+            <div className="mt-8 flex gap-4">
+              <a
+                href={COMPANY.social.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex size-10 items-center justify-center rounded-full border border-ivory/20 text-ivory/70 transition-all hover:border-gold hover:bg-gold hover:text-navy"
+                aria-label="Instagram"
+              >
+                <Instagram className="size-5" />
+              </a>
+              <a
+                href={COMPANY.social.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex size-10 items-center justify-center rounded-full border border-ivory/20 text-ivory/70 transition-all hover:border-gold hover:bg-gold hover:text-navy"
+                aria-label="Facebook"
+              >
+                <Facebook className="size-5" />
+              </a>
+              <a
+                href={COMPANY.social.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex size-10 items-center justify-center rounded-full border border-ivory/20 text-ivory/70 transition-all hover:border-gold hover:bg-gold hover:text-navy"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="size-5" />
+              </a>
+              <a
+                href={COMPANY.social.twitter}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex size-10 items-center justify-center rounded-full border border-ivory/20 text-ivory/70 transition-all hover:border-gold hover:bg-gold hover:text-navy"
+                aria-label="Twitter"
+              >
+                <Twitter className="size-5" />
+              </a>
             </div>
           </div>
 
