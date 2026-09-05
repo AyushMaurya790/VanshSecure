@@ -1,544 +1,310 @@
-# Vansh Advisory Suite
+# Vansh Secure Avenue LLP - Premium Wealth Management Website
 
-# Vansh Secure Avenue LLP – WEBSITE DESIGN BRIEF
+[![Built with Lovable](https://img.shields.io/badge/Built%20with-Lovable-blue)](https://lovable.dev)
+[![React](https://img.shields.io/badge/React-19.2.0-61DAFB?logo=react)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.8.3-3178C6?logo=typescript)](https://www.typescriptlang.org/)
+[![Vite](https://img.shields.io/badge/Vite-8.1.5-646CFF?logo=vite)](https://vitejs.dev/)
+[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4.2.1-38B2AC?logo=tailwind-css)](https://tailwindcss.com/)
 
-Create a premium, modern, elegant and highly professional website for **Vansh Secure Avenue LLP**, an **AMFI Registered Mutual Fund Distributor**.
+A premium, modern, and elegant website for **Vansh Secure Avenue LLP**, an AMFI Registered Mutual Fund Distributor. This website represents a trusted private wealth advisory firm, designed to communicate trust, expertise, stability, and professionalism.
 
-This website should represent a trusted private wealth advisory firm, not a fintech startup, trading platform, crypto exchange, SaaS product, or generic financial company.
+## 🏢 About the Company
 
-The overall experience should immediately communicate **trust, expertise, stability, professionalism, long-term wealth creation and premium financial advisory services.**
+**Vansh Secure Avenue LLP** is an AMFI Registered Mutual Fund Distributor (ARN-287084) offering comprehensive wealth management services.
 
-The website should feel custom designed by a premium digital agency rather than generated from a template.
+**Tagline:** *Save Karo, Secure Karo*
 
---------------------------------------------------
+We help clients build, protect, and grow their wealth through personalized financial solutions tailored for HNI, UHNI, Business Owners, Professionals, and NRI families.
 
-ABOUT THE COMPANY
+## 🚀 Tech Stack
 
---------------------------------------------------
+### Frontend Framework
+- **React 19.2.0** - Modern React with latest features
+- **TypeScript 5.8.3** - Type-safe development
+- **Vite 8.1.5** - Next-generation frontend build tool
 
-Company Name:
+### Routing & State Management
+- **TanStack Router 1.170.18** - Type-safe routing solution
+- **TanStack Query 5.101.1** - Powerful data synchronization
+- **React Hook Form 7.71.2** - Performant form management
 
-Vansh Secure Avenue LLP
+### UI & Styling
+- **Tailwind CSS 4.2.1** - Utility-first CSS framework
+- **Radix UI** - Headless UI components for accessibility
+- **Shadcn/ui** - Beautiful, customizable components
+- **Lucide React** - Beautiful & consistent icons
+- **Class Variance Authority** - CSS-in-JS variant management
 
-Business:
+### Design System Components
+- Accordion, Alert Dialog, Avatar, Badge
+- Button, Calendar, Card, Carousel
+- Checkbox, Dialog, Dropdown Menu
+- Form, Input, Label, Select
+- Sheet, Tabs, Toast (Sonner)
+- Tooltip, Navigation Menu
+- And more...
 
-AMFI Registered Mutual Fund Distributor
+### Animation & Effects
+- **Embla Carousel** - Smooth carousel experiences
+- **Vaul** - Drawer component
+- **tw-animate-css** - CSS animation utilities
 
-Tagline:
+### Form Validation
+- **Zod 3.24.2** - TypeScript-first schema validation
+- **@hookform/resolvers** - Form validation integration
 
-Save Karo, Secure Karo
+### Development Tools
+- **ESLint 9.32.0** - Code linting
+- **Prettier 3.7.3** - Code formatting
+- **TypeScript ESLint** - TypeScript-specific linting rules
 
-We help clients build, protect and grow their wealth through personalized financial solutions.
+## 📁 Project Structure
 
-Our services include:
-
-• Mutual Funds
-
-• Insurance Solutions
-
-• Loan Against Securities
-
-• Investment through GIFT City
-
-• Specialized Investment Fund (SIF)
-
-• Corporate Fixed Deposits
-
-• Tax Saving Bonds
-
-• Unlisted Shares
-
-Present every service as a premium financial solution rather than just another product.
-
---------------------------------------------------
-
-TARGET AUDIENCE
-
---------------------------------------------------
-
-The website is designed for:
-
-• High Net Worth Individuals (HNI)
-
-• Ultra High Net Worth Individuals (UHNI)
-
-• Business Owners
-
-• Corporate Clients
-
-• Doctors
-
-• Professionals
-
-• Entrepreneurs
-
-• NRIs
-
-• Families planning long-term wealth
-
-The website should make these visitors feel comfortable trusting Vansh Secure Avenue LLP with their financial future.
-
---------------------------------------------------
-
-DESIGN STYLE
-
---------------------------------------------------
-
-The design should be clean, luxurious, timeless and elegant.
-
-Take inspiration from boutique wealth management firms and private banking websites.
-
-The design should feel premium without becoming flashy.
-
-Avoid:
-
-❌ SaaS layouts
-
-❌ Crypto style
-
-❌ Trading dashboards
-
-❌ Generic WordPress templates
-
-❌ Bright gradients
-
-❌ Cheap stock website appearance
-
-❌ Overly futuristic UI
-
-❌ Excessive glassmorphism
-
-❌ Busy layouts
-
-The website should focus on beautiful typography, generous whitespace, premium spacing, refined animations and excellent user experience.
-
---------------------------------------------------
-
-COLOR PALETTE
-
---------------------------------------------------
-
-Use the uploaded company logo as the primary branding reference.
-
-Primary Navy:
-
-#20224A
-
-Luxury Ivory:
-
-#F8F7F3
-
-Luxury Gold:
-
-#D9C37B
-
-Teal Accent:
-
-#5FC7D4
-
-Green Accent:
-
-#A8D36E
-
-Maintain approximately:
-
-60% Navy
-
-30% Ivory
-
-10% Accent colours
-
-Use teal and green only as subtle highlights inside icons, charts or decorative details.
-
-Gold should be used carefully for buttons, borders, highlights and premium accents.
-
---------------------------------------------------
-
-TYPOGRAPHY
-
---------------------------------------------------
-
-Headings:
-
-Cormorant Garamond
-
-Body:
-
-Plus Jakarta Sans
-
-Use large headings, excellent readability, balanced spacing and premium typography hierarchy.
-
---------------------------------------------------
-
-USER INTERFACE
-
---------------------------------------------------
-
-Create a clean and premium interface using:
-
-• Soft shadows
-
-• Elegant spacing
-
-• Rounded corners
-
-• Premium cards
-
-• Refined icons
-
-• Smooth hover effects
-
-• Luxury buttons
-
-• Beautiful section transitions
-
-• Consistent design language
-
-Animations should be smooth, subtle and elegant.
-
-Never create distracting animations.
-
---------------------------------------------------
-
-IMAGES
-
---------------------------------------------------
-
-Images are one of the most important parts of the website.
-
-Use only premium editorial-quality images that look suitable for a luxury wealth management firm.
-
-Images should feel realistic, elegant and professionally art directed.
-
-Preferred imagery includes:
-
-• Financial advisors consulting clients
-
-• Business owners
-
-• Professional meetings
-
-• Family financial planning
-
-• Retirement planning
-
-• Investment discussions
-
-• Premium office environments
-
-• Luxury architectural spaces
-
-• Professional lifestyle photography
-
-Avoid:
-
-❌ Handshake stock photos
-
-❌ Cheap corporate stock images
-
-❌ Cartoon illustrations
-
-❌ Unrealistic AI faces
-
-❌ Poor quality office photography
-
-❌ Generic finance graphics
-
-Every image should follow a consistent visual style throughout the website.
-
---------------------------------------------------
-
-HOMEPAGE STRUCTURE
-
---------------------------------------------------
-
-Design the homepage with the following flow:
-
-1. Hero Banner
-
-2. Trust Bar
-
-3. Our Premium Services
-
-4. Goal Based Investment Solutions
-
-5. About Vansh Secure Avenue LLP
-
-6. Founder Message
-
-7. Why Choose Us
-
-8. Investment Journey
-
-9. Who We Serve
-
-10. Frequently Asked Questions
-
-11. Contact Section
-
-12. Footer
-
-The Hero, Services and Goal-Based Investment sections should receive the strongest visual treatment.
-
---------------------------------------------------
-
-SERVICES
-
---------------------------------------------------
-
-Create dedicated premium cards for:
-
-• Mutual Funds
-
-• Insurance
-
-• Loan Against Securities
-
-• Investment through GIFT City
-
-• Specialized Investment Fund (SIF)
-
-• Corporate Fixed Deposits
-
-• Tax Saving Bonds
-
-• Unlisted Shares
-
-Every service card should include:
-
-• Premium icon or illustration
-
-• Short description
-
-• Elegant hover effect
-
-• Strong Call-to-Action
-
---------------------------------------------------
-
-INDIVIDUAL PAGES
-
---------------------------------------------------
-
-This should NOT be a single-page website.
-
-Every navigation menu item should have its own dedicated page.
-
-Required pages include:
-
-• Home
-
-• About
-
-• Services
-
-• Mutual Funds
-
-• Insurance
-
-• Loan Against Securities
-
-• GIFT City Investments
-
-• Specialized Investment Fund (SIF)
-
-• Corporate Fixed Deposits
-
-• Tax Saving Bonds
-
-• Unlisted Shares
-
-• Why Choose Us
-
-• Contact
-
-Every service page should include:
-
-• Premium Hero Banner
-
-• Service Overview
-
-• Benefits
-
-• Why Choose Vansh Secure Avenue LLP
-
-• Our Process
-
-• FAQs
-
-• Consultation Section
-
-• Strong CTA
-
-Every page should feel unique while maintaining the same design language.
-
---------------------------------------------------
-
-CALL TO ACTION STRATEGY
-
---------------------------------------------------
-
-The website should be designed to generate qualified leads.
-
-Avoid generic buttons such as:
-
-❌ Submit
-
-❌ Contact Us
-
-❌ Learn More
-
-❌ Read More
-
-Instead use premium CTAs such as:
-
-• Schedule Your Consultation
-
-• Speak with an Investment Advisor
-
-• Start Your Wealth Journey
-
-• Build Your Investment Portfolio
-
-• Protect & Grow Your Wealth
-
-• Discover Investment Opportunities
-
-• Request a Personalized Consultation
-
-• Connect with Our Experts
-
-• Secure Your Financial Future
-
-• Talk to an Advisor Today
-
-Primary CTA:
-
-Schedule Your Consultation
-
-Secondary CTA:
-
-Talk to an Advisor
-
-or
-
-Explore Our Services
-
-CTA buttons should include:
-
-• Premium gold styling
-
-• Elegant hover animations
-
-• Smooth transitions
-
-• Soft shadows
-
-• Premium typography
-
-• Arrow animations where appropriate
-
-Place strong CTAs throughout the website including:
-
-• Hero
-
-• Services
-
-• Goal Based Investment Section
-
-• About
-
-• Founder Message
-
-• Every Service Page
-
-• FAQ
-
-• Contact
-
-• Footer
-
---------------------------------------------------
-
-USER EXPERIENCE
-
---------------------------------------------------
-
-Navigation should be effortless.
-
-The user journey should naturally follow:
-
-Trust → Services → Benefits → Expertise → Consultation
-
-Every page should encourage users to book a consultation without feeling pushy.
-
-The website should balance premium branding with strong lead generation.
-
---------------------------------------------------
-
-RESPONSIVE DESIGN
-
---------------------------------------------------
-
-Design for:
-
-Desktop
-
-Laptop
-
-Tablet
-
-Mobile
-
-Maintain the same premium experience across all screen sizes.
-
---------------------------------------------------
-
-FINAL GOAL
-
---------------------------------------------------
-
-Create a website that feels like a premium boutique wealth management firm trusted by serious investors.
-
-The website should communicate:
-
-• Trust
-
-• Professionalism
-
-• Stability
-
-• Long-term expertise
-
-• Premium financial advisory
-
-• Luxury service
-
-• High credibility
-
-Visitors should immediately feel confident enough to schedule a consultation.
-
-The final website should look completely custom designed, premium, modern, elegant and conversion-focused, with every page professionally crafted and visually engaging.
-
-This project was built with [Lovable](https://lovable.dev).
-
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/76b36da8-5dfd-4fa6-8403-9b4fe1e0547c).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
 ```
-#   V a n s h S e c u r e  
- 
+VanshSecure/
+├── src/
+│   ├── assets/              # Images, logos, and static files
+│   │   ├── hero-office.jpg
+│   │   ├── founder-anuj.jpg
+│   │   ├── founder-stuti.jpg
+│   │   ├── office-*.jpg
+│   │   └── vansh-logo.svg
+│   ├── components/          # Reusable React components
+│   │   ├── ui/             # Shadcn UI components
+│   │   │   ├── accordion.tsx
+│   │   │   ├── button.tsx
+│   │   │   ├── card.tsx
+│   │   │   ├── dialog.tsx
+│   │   │   ├── input.tsx
+│   │   │   └── ...
+│   │   └── site/           # Website-specific components
+│   │       ├── site-header.tsx
+│   │       ├── site-footer.tsx
+│   │       ├── page-hero.tsx
+│   │       ├── service-card.tsx
+│   │       ├── consultation-section.tsx
+│   │       ├── faq-section.tsx
+│   │       ├── testimonials-section.tsx
+│   │       ├── marquee-banner.tsx
+│   │       └── whatsapp-button.tsx
+│   ├── hooks/              # Custom React hooks
+│   │   └── use-mobile.tsx
+│   ├── lib/                # Utility functions and data
+│   │   └── site-data.ts   # Company data, services, FAQs
+│   ├── routes/             # TanStack Router pages
+│   │   ├── index.tsx      # Homepage
+│   │   ├── about.tsx      # About page
+│   │   ├── services.tsx   # Services overview
+│   │   ├── contact.tsx    # Contact page
+│   │   ├── why-choose-us.tsx
+│   │   ├── mutual-funds.tsx
+│   │   ├── insurance.tsx
+│   │   ├── loan-against-securities.tsx
+│   │   ├── gift-city.tsx
+│   │   ├── sif.tsx
+│   │   ├── corporate-fixed-deposits.tsx
+│   │   ├── tax-saving-bonds.tsx
+│   │   └── unlisted-shares.tsx
+│   ├── main.tsx           # Application entry point
+│   ├── router.tsx         # Router configuration
+│   └── index.css          # Global styles & Tailwind
+├── public/                # Public static assets
+│   ├── favicon.jpg
+│   └── securelogo.jpg
+├── .git/                  # Git version control
+├── .gitignore            # Git ignore rules
+├── .prettierrc           # Prettier configuration
+├── .prettierignore       # Prettier ignore rules
+├── components.json       # Shadcn UI configuration
+├── eslint.config.js      # ESLint configuration
+├── package.json          # Dependencies and scripts
+├── tsconfig.json         # TypeScript configuration
+├── vite.config.ts        # Vite configuration
+├── tailwind.config.js    # Tailwind CSS configuration
+└── README.md             # Project documentation
+```
+
+## 🎨 Design System
+
+### Color Palette
+- **Primary Navy**: `#20224A` - Main brand color (60%)
+- **Luxury Ivory**: `#F8F7F3` - Background & light surfaces (30%)
+- **Luxury Gold**: `#D9C37B` - CTAs, accents, highlights (10%)
+- **Teal Accent**: `#5FC7D4` - Subtle highlights
+- **Green Accent**: `#A8D36E` - Success states
+
+### Typography
+- **Headings**: Cormorant Garamond (Elegant serif)
+- **Body**: Plus Jakarta Sans (Modern sans-serif)
+
+### Design Principles
+- Clean, luxurious, and timeless
+- Generous whitespace
+- Premium spacing and shadows
+- Smooth, subtle animations
+- Consistent design language
+- Mobile-first responsive design
+
+## 🌟 Key Features
+
+### Pages
+- **Home** - Hero, services, goals, testimonials
+- **About** - Company story, founders, values
+- **Services** - 8 premium financial solutions
+- **Individual Service Pages** - Detailed service information
+- **Why Choose Us** - Trust factors and differentiators
+- **Contact** - Multi-channel contact form
+
+### Services Offered
+1. **Mutual Funds** - Goal-based portfolio construction
+2. **Insurance Solutions** - Life, health, and protection planning
+3. **Loan Against Securities** - Portfolio liquidity solutions
+4. **GIFT City Investments** - Global diversification
+5. **Specialized Investment Fund (SIF)** - Advanced strategies
+6. **Corporate Fixed Deposits** - Stable income solutions
+7. **Tax Saving Bonds** - Tax-efficient investments
+8. **Unlisted Shares** - Pre-IPO opportunities
+
+### UI Components
+- Premium hero sections with overlays
+- Animated service cards with hover effects
+- Goal-based investment cards
+- Founder message section
+- Trust indicators and statistics
+- FAQ accordion sections
+- Consultation booking CTAs
+- Testimonials carousel
+- WhatsApp floating button
+- Marquee banner with services
+- Social media integration
+
+## 📦 Installation & Setup
+
+### Prerequisites
+- Node.js (v18+ recommended)
+- npm or yarn package manager
+- Git
+
+### Local Development
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/AyushMaurya790/VanshSecure.git
+cd VanshSecure
+```
+
+2. **Install dependencies**
+```bash
+npm install
+# or
+yarn install
+```
+
+3. **Start development server**
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+4. **Open browser**
+```
+http://localhost:5173
+```
+
+### Build for Production
+
+```bash
+npm run build
+# or
+yarn build
+```
+
+### Preview Production Build
+
+```bash
+npm run preview
+# or
+yarn preview
+```
+
+### Linting & Formatting
+
+```bash
+# Run ESLint
+npm run lint
+
+# Format code with Prettier
+npm run format
+```
+
+## 🔧 Configuration Files
+
+### `vite.config.ts`
+Vite configuration with React plugin, path aliases, and TanStack Router plugin
+
+### `tailwind.config.js`
+Custom Tailwind configuration with design system tokens
+
+### `tsconfig.json`
+TypeScript compiler options with path mapping
+
+### `components.json`
+Shadcn UI component configuration
+
+### `eslint.config.js`
+ESLint rules for code quality
+
+## 🚢 Deployment
+
+### Build Command
+```bash
+npm run build
+```
+
+### Output Directory
+```
+dist/
+```
+
+### Recommended Platforms
+- **Vercel** - Optimized for Vite applications
+- **Netlify** - Continuous deployment from Git
+- **AWS Amplify** - Full-stack hosting
+- **Cloudflare Pages** - Edge deployment
+
+## 🔗 Integration with Lovable
+
+This project is integrated with [Lovable](https://lovable.dev) for AI-powered development:
+
+- **Project ID**: `76b36da8-5dfd-4fa6-8403-9b4fe1e0547c`
+- Changes in Lovable sync to GitHub automatically
+- Push to `main` branch syncs back to Lovable
+- Full bidirectional synchronization
+
+### Continue Development in Lovable
+[Open in Lovable Editor](https://lovable.dev/projects/76b36da8-5dfd-4fa6-8403-9b4fe1e0547c)
+
+## 📄 License
+
+This project is proprietary and confidential. All rights reserved by Vansh Secure Avenue LLP.
+
+## 📞 Contact
+
+**Vansh Secure Avenue LLP**
+- **ARN**: ARN-287084
+- **Phone**: +91 81782 24594
+- **WhatsApp**: +91 81782 24594
+- **Email**: support@vanshsecure.com
+- **Address**: 84, Basement, Pocket 1, Jasola Vihar, New Delhi, Delhi 110025
+- **Hours**: Mon – Sat · 10:00 AM to 7:00 PM IST
+
+### Social Media
+- **Instagram**: [@vanshsecureavenue](https://www.instagram.com/vanshsecureavenue/)
+- **Facebook**: [Vansh Secure Avenue](https://www.facebook.com/vanshsecureavenue/)
+- **LinkedIn**: [Vansh Secure Avenue LLP](https://www.linkedin.com/company/vansh-secure-avenue-llp/)
+- **Twitter**: [@vanshsecure](https://twitter.com/vanshsecure)
+
+---
+
+**Built with ❤️ using React, TypeScript, Vite, and TanStack Router**

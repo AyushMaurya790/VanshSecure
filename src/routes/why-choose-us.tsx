@@ -64,7 +64,7 @@ function WhyPage() {
         lede="A boutique practice, an independent process and a standard of care that does not change with portfolio size."
         image={architecture}
         imageAlt="Luxury financial district architecture at dusk"
-        actions={<CtaLink to="/contact">Speak with an Expert</CtaLink>}
+        actions={<CtaLink to="/contact">Free Portfolio Review</CtaLink>}
       />
 
       <Section>

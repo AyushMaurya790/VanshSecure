@@ -28,7 +28,7 @@ export function FaqSection({
           />
           <div className="mt-10">
             <CtaLink to="/contact" variant="outlineDark">
-              Speak with an Expert
+              Free Portfolio Review
             </CtaLink>
           </div>
         </div>
