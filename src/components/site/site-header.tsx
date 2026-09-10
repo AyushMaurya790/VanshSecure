@@ -52,7 +52,7 @@ export function SiteHeader() {
               alt="Vansh Secure Avenue LLP logo"
               width={120}
               height={120}
-              className="size-24 rounded-full object-cover shadow-lg sm:size-28 ring-4 ring-gold/30 hover:ring-gold/50 transition-all"
+              className="size-16 rounded-full object-contain shadow-lg sm:size-20 ring-4 ring-gold/30 hover:ring-gold/50 transition-all"
             />
             <span className="leading-tight">
               <span className="block font-display text-xl tracking-tight text-navy sm:text-2xl">
