@@ -46,16 +46,16 @@ export function SiteHeader() {
         )}
       >
         <div className="container-page flex items-center justify-between gap-6 py-4">
-          <Link to="/" className="flex items-center gap-3.5">
+          <Link to="/" className="flex min-w-0 items-center gap-3 sm:gap-3.5">
             <img
               src={logo}
               alt="Vansh Secure Avenue LLP logo"
               width={120}
               height={120}
-              className="size-16 rounded-full object-contain shadow-lg sm:size-20 ring-4 ring-gold/30 hover:ring-gold/50 transition-all"
+              className="size-16 shrink-0 rounded-full object-contain object-center shadow-lg sm:size-20 lg:size-24"
             />
-            <span className="leading-tight">
-              <span className="block font-display text-xl tracking-tight text-navy sm:text-2xl">
+            <span className="min-w-0 leading-tight">
+              <span className="block font-display text-lg tracking-tight text-navy sm:text-xl lg:text-2xl">
                 Vansh Secure Avenue LLP
               </span>
               <span className="eyebrow block text-[0.6rem] text-gold-deep">

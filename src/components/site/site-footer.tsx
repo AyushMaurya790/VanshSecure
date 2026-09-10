@@ -17,7 +17,7 @@ export function SiteFooter() {
                 width={80}
                 height={80}
                 loading="lazy"
-                className="size-14 rounded-full object-contain"
+                className="size-14 shrink-0 rounded-full object-contain object-center sm:size-16 lg:size-18"
               />
               <span>
                 <span className="block font-display text-2xl text-ivory">
