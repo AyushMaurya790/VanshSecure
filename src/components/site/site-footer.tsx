@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Mail, MapPin, Phone, Instagram, Facebook, Linkedin, Twitter } from "lucide-react";
+import { Mail, MapPin, Phone, Instagram, Facebook, Linkedin, X } from "lucide-react";
 import { COMPANY, NAV_LINKS, SERVICES } from "@/lib/site-data";
 import { CtaLink } from "@/components/site/cta";
 import logo from "@/assets/securelogo.jpg";
@@ -76,13 +76,13 @@ export function SiteFooter() {
                 <Linkedin className="size-5" />
               </a>
               <a
-                href={COMPANY.social.twitter}
+                href={COMPANY.social.x}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex size-10 items-center justify-center rounded-full border border-ivory/20 text-ivory/70 transition-all hover:border-gold hover:bg-gold hover:text-navy"
-                aria-label="Twitter"
+                aria-label="X"
               >
-                <Twitter className="size-5" />
+                <X className="size-5" />
               </a>
             </div>
           </div>

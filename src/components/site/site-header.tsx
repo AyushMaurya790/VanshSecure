@@ -50,9 +50,9 @@ export function SiteHeader() {
             <img
               src={logo}
               alt="Vansh Secure Avenue LLP logo"
-              width={72}
-              height={72}
-              className="size-16 rounded-full object-cover"
+              width={120}
+              height={120}
+              className="size-24 rounded-full object-cover shadow-lg sm:size-28 ring-4 ring-gold/30 hover:ring-gold/50 transition-all"
             />
             <span className="leading-tight">
               <span className="block font-display text-xl tracking-tight text-navy sm:text-2xl">

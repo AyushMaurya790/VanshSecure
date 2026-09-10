@@ -30,8 +30,8 @@ export const COMPANY = {
   social: {
     instagram: "https://www.instagram.com/vanshsecureavenue/",
     facebook: "https://www.facebook.com/vanshsecureavenue/",
-    linkedin: "https://www.linkedin.com/company/vansh-secure-avenue-llp/",
-    twitter: "https://twitter.com/vanshsecure",
+    linkedin: "https://www.linkedin.com/in/vansh-secure-avenue-llp-b179b9406/",
+    x: "https://x.com/vanshsecure",
   },
 };
 
