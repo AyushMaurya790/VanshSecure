@@ -22,6 +22,7 @@ import { Route as SifRouteImport } from './routes/sif'
 import { Route as TaxSavingBondsRouteImport } from './routes/tax-saving-bonds'
 import { Route as UnlistedSharesRouteImport } from './routes/unlisted-shares'
 import { Route as WhyChooseUsRouteImport } from './routes/why-choose-us'
+import { Route as AdminIndexRouteImport } from './routes/admin/index'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -88,6 +89,11 @@ const WhyChooseUsRoute = WhyChooseUsRouteImport.update({
   path: '/why-choose-us',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AdminIndexRoute = AdminIndexRouteImport.update({
+  id: '/admin/',
+  path: '/admin/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -103,6 +109,7 @@ export interface FileRoutesByFullPath {
   '/tax-saving-bonds': typeof TaxSavingBondsRoute
   '/unlisted-shares': typeof UnlistedSharesRoute
   '/why-choose-us': typeof WhyChooseUsRoute
+  '/admin/': typeof AdminIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -118,6 +125,7 @@ export interface FileRoutesByTo {
   '/tax-saving-bonds': typeof TaxSavingBondsRoute
   '/unlisted-shares': typeof UnlistedSharesRoute
   '/why-choose-us': typeof WhyChooseUsRoute
+  '/admin': typeof AdminIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -134,6 +142,7 @@ export interface FileRoutesById {
   '/tax-saving-bonds': typeof TaxSavingBondsRoute
   '/unlisted-shares': typeof UnlistedSharesRoute
   '/why-choose-us': typeof WhyChooseUsRoute
+  '/admin/': typeof AdminIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -151,6 +160,7 @@ export interface FileRouteTypes {
     | '/tax-saving-bonds'
     | '/unlisted-shares'
     | '/why-choose-us'
+    | '/admin/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -166,6 +176,7 @@ export interface FileRouteTypes {
     | '/tax-saving-bonds'
     | '/unlisted-shares'
     | '/why-choose-us'
+    | '/admin'
   id:
     | '__root__'
     | '/'
@@ -181,6 +192,7 @@ export interface FileRouteTypes {
     | '/tax-saving-bonds'
     | '/unlisted-shares'
     | '/why-choose-us'
+    | '/admin/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -197,6 +209,7 @@ export interface RootRouteChildren {
   TaxSavingBondsRoute: typeof TaxSavingBondsRoute
   UnlistedSharesRoute: typeof UnlistedSharesRoute
   WhyChooseUsRoute: typeof WhyChooseUsRoute
+  AdminIndexRoute: typeof AdminIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -292,6 +305,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof WhyChooseUsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/admin/': {
+      id: '/admin/'
+      path: '/admin'
+      fullPath: '/admin/'
+      preLoaderRoute: typeof AdminIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -309,6 +329,7 @@ const rootRouteChildren: RootRouteChildren = {
   TaxSavingBondsRoute: TaxSavingBondsRoute,
   UnlistedSharesRoute: UnlistedSharesRoute,
   WhyChooseUsRoute: WhyChooseUsRoute,
+  AdminIndexRoute: AdminIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

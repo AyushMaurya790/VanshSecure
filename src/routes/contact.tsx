@@ -51,9 +51,28 @@ function ContactPage() {
               className="mt-10 grid gap-6 sm:grid-cols-2"
               onSubmit={(e) => {
                 e.preventDefault();
+                const form = e.target as HTMLFormElement;
+                const formData = new FormData(form);
+                
+                // Save lead to localStorage
+                const lead = {
+                  id: Date.now().toString(),
+                  name: formData.get('name') as string,
+                  phone: formData.get('phone') as string,
+                  email: formData.get('email') as string,
+                  interest: formData.get('interest') as string,
+                  message: formData.get('message') as string || '',
+                  timestamp: new Date().toISOString(),
+                };
+                
+                const existingLeads = localStorage.getItem('contact_leads');
+                const leads = existingLeads ? JSON.parse(existingLeads) : [];
+                leads.push(lead);
+                localStorage.setItem('contact_leads', JSON.stringify(leads));
+                
                 setSent(true);
                 toast.success("Thank you — an expert will contact you shortly.");
-                (e.target as HTMLFormElement).reset();
+                form.reset();
               }}
             >
               <Field label="Full Name" name="name" required />
