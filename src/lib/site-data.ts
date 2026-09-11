@@ -29,7 +29,7 @@ export const COMPANY = {
   experience: "12+ years",
   social: {
     instagram: "https://www.instagram.com/vanshsecureavenue/",
-    facebook: "https://www.facebook.com/vanshsecureavenue/",
+    facebook: "https://www.facebook.com/people/Vansh-Secure-Avenue-LLP/61594240232494/?rdid=9WZE1Y34ThaJi8qb&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1BtQgLcQJh%2F",
     linkedin: "https://www.linkedin.com/in/vansh-secure-avenue-llp-b179b9406/",
     x: "https://x.com/vanshsecure",
   },
