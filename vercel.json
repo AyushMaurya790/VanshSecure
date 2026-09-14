@@ -1,6 +1,12 @@
 {
-  "framework": "tanstack-start",
-  "buildCommand": "npm run build",
-  "installCommand": "npm install",
-  "outputDirectory": ".output"
+  "framework": null,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": ".output"
+      }
+    }
+  ]
 }
