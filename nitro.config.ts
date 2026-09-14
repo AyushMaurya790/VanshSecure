@@ -1,7 +1,7 @@
 import { defineNitroConfig } from "nitro/config";
 
 export default defineNitroConfig({
-  preset: "node-server",
+  preset: "vercel",
   compatibilityDate: "2026-09-11",
   serveStatic: true,
   output: {
