@@ -1,103 +1,226 @@
-# Hostinger Deployment Guide
+# Hostinger Deployment Guide - VanshSecure
 
-## Prerequisites
-- Node.js v22.x or higher
-- npm installed
-- Hostinger Node.js hosting plan
+## 🎯 IMPORTANT: Hostinger Deployment Configuration
 
-## Build Steps
+### Output Directory Issue Fix
 
-1. **Install Dependencies**
-```bash
-npm install
+Hostinger might not recognize `.output` directory automatically. Follow these exact steps:
+
+---
+
+## ✅ Solution 1: Manual File Structure (RECOMMENDED)
+
+After build completes locally, upload these to Hostinger:
+
+```
+your-domain-folder/
+├── .output/              ← ENTIRE FOLDER (REQUIRED)
+│   ├── server/
+│   │   └── index.mjs     ← Main entry point
+│   └── public/           ← Static assets
+├── node_modules/         ← Or run npm install on server
+├── package.json
+├── package-lock.json
 ```
 
-2. **Build for Production**
+### Steps:
+
+1. **Build Locally:**
 ```bash
+npm install
 npm run build
 ```
 
-This will create a `.output` folder with:
-- `.output/server/` - Node.js server files
-- `.output/public/` - Static assets
+2. **Verify .output folder exists:**
+```bash
+ls -la .output/
+```
 
-## Hostinger Deployment
+3. **Upload via FTP/SFTP to Hostinger:**
+   - Connect to your hosting
+   - Upload ENTIRE `.output` folder
+   - Upload `package.json`, `package-lock.json`
+   - Upload `node_modules` (OR run `npm install` on server)
 
-### Method 1: File Upload via FTP/SFTP
+4. **Configure Node.js in Hostinger:**
+   - Application Root: `/home/username/your-domain-folder`
+   - Entry File: `.output/server/index.mjs`
+   - Node Version: `22.x`
+   - Click "Create Application"
 
-1. **Upload Files:**
-   - Upload entire `.output` folder to your Hostinger public_html or app directory
-   - Upload `node_modules` folder (or run `npm install` on server)
-   - Upload `package.json`
+---
 
-2. **Set Node.js Settings in Hostinger:**
-   - Go to Hostinger Control Panel
-   - Select "Node.js"
-   - Set Node.js version to **22.x**
-   - Set Application Root: Your app folder path
-   - Set Application URL: Your domain
-   - Set Application Startup File: `.output/server/index.mjs`
-   - Click "Create"
+## ✅ Solution 2: GitHub Auto-Deploy with Custom Build
 
-3. **Start the Application:**
-   - In Hostinger panel, click "Run npm install" 
-   - Then click "Start Application"
+### Step 1: Push to GitHub
 
-### Method 2: Using Git + Hostinger Auto Deploy
-
-1. **Push to GitHub:**
 ```bash
 git add .
-git commit -m "Production build ready"
+git commit -m "Ready for Hostinger deployment"
 git push origin main
 ```
 
-2. **Connect Repository in Hostinger:**
-   - Go to Hostinger Control Panel → GitHub
-   - Connect your repository
-   - Set build command: `npm install && npm run build`
-   - Set start command: `npm start`
+### Step 2: Hostinger Panel Configuration
 
-## Environment Variables (if needed)
+1. Go to **Hostinger Control Panel**
+2. Navigate to **Git**
+3. Connect Repository: `VanshSecure`
+4. **IMPORTANT Build Settings:**
 
-In Hostinger Panel → Node.js → Add environment variables:
 ```
-NODE_ENV=production
-PORT=3000
+Branch: main
+
+Build Command:
+npm install --legacy-peer-deps && npm run build && ls -la .output
+
+Deploy Path: 
+/home/username/domains/vanshsecure.in/public_html
+
+Entry Point:
+.output/server/index.mjs
 ```
 
-## Admin Panel Credentials
+### Step 3: Node.js Configuration
 
-**URL:** `https://yourdomain.com/admin`
+1. Go to **Node.js** section
+2. Create Application:
+   - App Root: Same as deploy path above
+   - Entry File: `.output/server/index.mjs`
+   - Node Version: `22.x`
+   - Environment: `production`
 
-**Username:** `vanshsecure`
-**Password:** `VanshSecure@2024`
+---
 
-## Troubleshooting
+## ✅ Solution 3: Build Script Fix
 
-### Build Fails
-- Ensure Node.js version is 22.x
-- Run `npm install` before `npm run build`
-- Check build logs for specific errors
+If Hostinger still doesn't recognize output, create a symlink:
 
-### Application Won't Start
-- Verify startup file path: `.output/server/index.mjs`
-- Check Node.js version in Hostinger panel
-- View application logs in Hostinger panel
+In Hostinger SSH terminal:
 
-### Static Assets Not Loading
-- Ensure `.output/public` folder is uploaded
-- Check public directory permissions
+```bash
+cd /home/username/domains/vanshsecure.in/public_html
+npm install
+npm run build
 
-## Post-Deployment
+# Verify output
+ls -la .output/
+ls -la .output/server/
+ls -la .output/public/
 
-1. Visit your domain to verify deployment
-2. Test admin panel: `https://yourdomain.com/admin`
-3. Test contact form and check leads in admin panel
+# If .output exists but not recognized, create symlink
+ln -s .output output
 
-## Support
+# Set permissions
+chmod -R 755 .output
+```
 
-For issues, check:
-- Hostinger Node.js documentation
-- Application logs in Hostinger panel
-- Build logs for errors
+---
+
+## 🔧 Troubleshooting
+
+### "No output directory found"
+
+**Check 1: Verify build completed**
+```bash
+npm run build
+ls -la .output/
+```
+
+**Check 2: Build output path**
+Make sure build creates `.output` not `output` or `dist`
+
+**Check 3: File permissions**
+```bash
+chmod -R 755 .output
+```
+
+**Check 4: Hostinger recognizes the folder**
+In Hostinger panel, check if `.output` folder is visible in File Manager
+
+### Build succeeds but app won't start
+
+1. **Entry file path must be exact:**
+   - Correct: `.output/server/index.mjs`
+   - Wrong: `output/server/index.mjs`
+   - Wrong: `.output/server/index.js`
+
+2. **Check Node.js version:**
+   - Must be 22.x or higher
+
+3. **Check application logs:**
+   - Hostinger Panel → Node.js → Your App → Logs
+
+---
+
+## 📋 Pre-Deployment Checklist
+
+Before deploying, verify locally:
+
+```bash
+# 1. Clean install
+rm -rf node_modules .output
+npm install
+
+# 2. Build
+npm run build
+
+# 3. Verify output
+ls -la .output/
+ls -la .output/server/index.mjs
+ls -la .output/public/
+
+# 4. Test locally
+npm start
+# Visit http://localhost:3000
+```
+
+If all 4 steps work locally, deployment will work!
+
+---
+
+## 🚀 Quick Deploy Commands
+
+### For FTP Upload:
+```bash
+# Build locally
+npm run build
+
+# Upload these via FTP:
+# - .output/ (entire folder)
+# - package.json
+# - package-lock.json
+```
+
+### For Git Deploy:
+```bash
+git add .
+git commit -m "Deploy to Hostinger"
+git push origin main
+```
+
+Then configure in Hostinger panel.
+
+---
+
+## 🔐 Admin Panel
+
+After successful deployment:
+
+```
+URL: https://vanshsecure.in/admin
+Username: vanshsecure  
+Password: VanshSecure@2024
+```
+
+---
+
+## 📞 Still Having Issues?
+
+1. **Check Hostinger documentation:** Support → Node.js Apps
+2. **View build logs:** In Hostinger deployment logs
+3. **SSH access:** Use terminal to debug
+4. **Contact support:** With build logs
+
+---
+
+**The `.output` directory MUST be uploaded/created for deployment to work!** 🎯

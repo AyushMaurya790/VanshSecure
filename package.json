@@ -9,9 +9,10 @@
   },
   "scripts": {
     "dev": "vite dev",
-    "build": "vite build",
+    "build": "vite build && node postbuild.js && echo 'Build completed successfully'",
     "build:dev": "vite build --mode development",
     "start": "node .output/server/index.mjs",
+    "postinstall": "echo 'Dependencies installed'",
     "preview": "vite preview",
     "lint": "eslint .",
     "format": "prettier --write ."

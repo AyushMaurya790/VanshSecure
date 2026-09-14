@@ -1,0 +1,2 @@
+# Redirect all requests to Node.js application
+# This file is for Apache servers (not needed for Node.js hosting)
