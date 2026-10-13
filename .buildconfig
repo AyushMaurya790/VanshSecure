@@ -1,0 +1,11 @@
+# Hostinger Build Configuration
+# This ensures .output directory is recognized
+
+[build]
+base = "."
+publish = ".output/public"
+command = "npm install && npm run build"
+
+[build.environment]
+NODE_VERSION = "22"
+NPM_FLAGS = "--legacy-peer-deps"
